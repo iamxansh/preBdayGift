@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Play Photo & Music</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: pink; /* Set the background color to pink */
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #000; /* Add a shadow to make text stand out */
+        }
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        p {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold; /* Make the text bold */
+            text-align: center;
+            margin-top: 15px;
+            text-shadow: 2px 2px 4px #000; /* Add shadow for better visibility */
+        }
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Heading to display -->
+    <h1>It's Pre-Birthday Gift Bachee😚🫂</h1>
+
+    <!-- Image to display -->
+    <img src="roseCat.jpg" alt="Displayed Image">
+    
+    <!-- Text below the image -->
+    <p>Le Laat Khaa🦶🏻🦶🏻🦶🏻🦶🏻</p>
+    
+    <!-- Audio to play automatically -->
+    <audio autoplay loop>
+        <source src="BijliKaBill.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // For mobile autoplay compatibility
+        document.addEventListener('click', function() {
+            var audio = document.querySelector('audio');
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    </script>
+
+</body>
+</html>
+
